@@ -1,0 +1,955 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #191a20;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth !important;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.inner {
+  padding: 5rem 0;
+}
+
+:root {
+  --text-color: #2a2a2a;
+  --orange: #fb5849;
+}
+
+/*-----------------------------header starts here------------------------------*/
+
+header {
+  width: 100%;
+  background-color: #ffff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.menu-list {
+  visibility: hidden;
+  opacity: 0;
+  width: 95%;
+  position: absolute;
+  top: 10.5rem;
+  left: 2.5%;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffff;
+  transition: all 1s ease;
+}
+
+.menu-list li {
+  list-style-type: none;
+  padding: 1.5rem 0;
+  border-top: 0.04rem solid #eee !important;
+}
+
+.menu-list #nopadding {
+  padding: 0rem 0rem !important;
+}
+
+.feature li {
+  list-style-type: none;
+  padding: 1.5rem 0rem;
+  border-top: 0.04rem solid #eee !important;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.feature li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+}
+
+.menu-list li a:hover,
+.feature li a:hover {
+  color: var(--orange);
+  transition: all 0.2s ease;
+}
+
+.menu-list #home {
+  color: var(--orange);
+}
+
+
+.change-menulist{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+
+#menu-bar {
+  padding-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.bar {
+  width: 80%;
+  height: 0.2rem;
+  background-color: #000;
+}
+
+.bar2 {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #000;
+}
+
+#bar1 {
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+#bar3 {
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+}
+
+.icon #bar1 {
+  width: 100%;
+  transform: translateY(2px) rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.icon #bar3 {
+  width: 100%;
+  transform: translateY(-2px) rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.icon #bar2 {
+  opacity: 0;
+}
+
+/*-----------------------------header ends here-------------------------------*/
+
+/*-----------------------------banner starts here-------------------------------*/
+
+.banner .fas {
+  font-size: 5rem;
+  color: var(--orange);
+  position: relative;
+  top: 50%;
+}
+
+.carousel-control {
+  background-image: none;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+}
+
+.banner .col-lg-4,
+.banner .col-lg-8 {
+  padding: 0;
+}
+
+.left-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/top-left-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-banner h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.left-banner h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.reservation {
+  width: 18rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #ffff;
+  color: var(--orange);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.carousel-height .carousel-inner .item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*-----------------------------banner ends here--------------------------------*/
+
+/*-----------------------------about starts here--------------------------------*/
+.about-left h6:before {
+  content: " ";
+  width: 3rem;
+  height: 0.1rem;
+  background-color: var(--orange);
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+}
+
+.about-left h6 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--orange);
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+.about-left h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.about-left p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--text-color);
+  letter-spacing: 0.08rem;
+  margin-top: 2rem;
+}
+
+.about img {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about-right a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.about-right .fa-play-circle {
+  font-size: 5rem;
+  color: var(--orange);
+}
+
+.about-right {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../image/about-video-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------------about ends here---------------------------------*/
+
+/*-----------------------------menu starts here---------------------------------*/
+.menu {
+  width: 100%;
+  background-color: #fffafa;
+}
+
+.menu-heading h6:before {
+  content: " ";
+  width: 3rem;
+  height: 0.1rem;
+  background-color: var(--orange);
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+}
+
+.menu-heading h6 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--orange);
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-heading h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-carousel .card {
+  width: 93%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 3% !important;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-clip: content-box;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+
+.owl-carousel .card-1 {
+  background-image: url(../image/menu-item-01.jpg);
+}
+
+.owl-carousel .card-2 {
+  background-image: url(../image/menu-item-02.jpg);
+}
+
+.owl-carousel .card-3 {
+  background-image: url(../image/menu-item-03.jpg);
+}
+
+.owl-carousel .card-4 {
+  background-image: url(../image/menu-item-04.jpg);
+}
+
+.owl-carousel .card-5 {
+  background-image: url(../image/menu-item-05.jpg);
+}
+
+.owl-carousel .price-tag {
+  width: 8rem;
+  min-height: 7rem;
+  color: #ffff;
+  background-color: var(--orange);
+  border-radius: 0.25rem;
+}
+
+.owl-carousel .price-tag h4 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 7rem;
+  text-align: center;
+}
+
+.owl-carousel .card .info {
+  width: 100%;
+  height: 300px;
+  padding: 2rem;
+  background-color: var(--orange);
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  position: relative;
+  /* top:70%; */
+  top: 27rem;
+}
+
+.change {
+  transform: translateY(-200px);
+  transition: transform 0.4s ease;
+}
+
+.removeChange {
+  transform: translateY(0px);
+  transition: transform 0.5s ease;
+}
+
+.owl-carousel .card .info h3 {
+  color: #ffff;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.owl-carousel .card .info p {
+  color: #ffff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+  color: #fb5849 !important;
+  font-size: 5rem !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+     background:none !important;
+}
+
+/*-----------------------------menu ends here---------------------------------*/
+
+/*-----------------------------chefs starts here---------------------------------*/
+.chefs-heading h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--orange);
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.chefs-heading h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.chef-info {
+  width: 100%;
+  border: 1px solid #afafaf;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.chef-info-change {
+  border: 1px solid var(--orange);
+}
+
+.chef-pic {
+  width: 100%;
+  position: relative;
+}
+
+.chef-pic img {
+  width: 100%;
+}
+
+.c-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c-name-change {
+  color: var(--orange);
+}
+
+.chef-name h3 {
+  font-size: 1.5rem;
+}
+
+.social-icons .fa-stack .fab {
+  color: #2a2a2a;
+}
+
+.social-icons .fa-stack .fas {
+  color: #fff;
+}
+
+/* .social-icons .fa-stack .fa-stack-2x:hover{
+    color: var(--orange) !important;
+} */
+
+.social-icons .fa-stack {
+  font-size: 2rem;
+  margin: 45% auto;
+  cursor: pointer;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: #2a2a2a;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in !important;
+}
+
+.change-overlay {
+  opacity: 0.8;
+  transition: all 0.5s ease-in !important;
+}
+
+/*-----------------------------chefs ends here----------------------------------*/
+
+/*-----------------------------contact starts here----------------------------------*/
+.contact {
+  width: 100%;
+  background-image: url(../image/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact-heading {
+  width: 100%;
+}
+
+.contact-heading h6:before {
+  content: " ";
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+}
+
+.contact-heading h6 {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact-heading h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.contact-heading p {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin: 3rem 0;
+}
+
+.block-icon .fa-circle {
+  color: var(--orange);
+}
+
+.block-icon .fa-stack-1x {
+  color: #fff;
+}
+
+.block-icon .fa-stack {
+  font-size: 3rem;
+}
+
+.block {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 5rem 1rem 3rem 1rem;
+}
+
+.block h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.block p {
+  cursor: pointer;
+}
+
+.block p:hover {
+  color: var(--orange) !important;
+  transition: all 0.3s ease;
+}
+
+.block-icon {
+  position: absolute;
+  top: -2rem;
+  left: 35%;
+}
+
+.contact .contact-right {
+  padding: 3rem;
+}
+
+.contact .reservation-form {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+}
+
+.reservation-form h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.reservation-form .form-control {
+  height: 4.5rem;
+  color: var(--text-color);
+  font-size: 1.45rem !important;
+}
+
+.reservation-form .form-control:focus {
+  border-color: var(--orange);
+  box-shadow: none;
+}
+
+.reservation-form .form-group ::placeholder {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#number,
+#time {
+  margin-top: 2rem;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator
+{
+  display: none;
+  -webkit-appearance: none;
+}
+
+#mycomment {
+  width: 100%;
+  height: 15rem;
+}
+
+#mybtn {
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--orange);
+  border: 0;
+}
+
+/*-----------------------------contact ends here----------------------------------*/
+
+/*-----------------------------klassy-week starts here------------------------------------*/
+
+.klassy-week .weekly-special {
+  text-align: center;
+}
+
+.weekly-special a {
+  text-decoration: none !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.weekly-special .breakfast {
+  color: var(--orange);
+}
+
+.meal-offer {
+  margin-top: 5rem;
+}
+
+.meal-offer h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.meal-offer p {
+  margin-top: 1rem;
+  line-height: 2.5rem;
+}
+
+.meal-offer img {
+  width: 85%;
+}
+
+.meal-offer .price-block {
+  width: 100% !important;
+  height: 7rem;
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 25% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.lunch-menu,
+.dinner-menu {
+  display: none;
+}
+/*-----------------------------klassy-week ends here------------------------------------*/
+
+/*-----------------------------footer starts here------------------------------------*/
+footer {
+  background-color: var(--orange);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+
+.footer-social-icons {
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-social-icons .fa-stack {
+  font-size: 2.3rem;
+}
+
+.footer-social-icons .fa-stack-2x {
+  color: #fff;
+}
+
+.footer-social-icons .fa-stack-1x {
+  color: var(--orange);
+}
+
+.footer-para p span {
+  color: #fff;
+}
+
+.footer-para p,
+.footer-para h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: right;
+}
+
+/*-----------------------------footer ends here-------------------------------------*/
+
+/*-----------------------------media query stars here-------------------------------*/
+@media only screen and (min-width: 768px) {
+  #menu-bar {
+    display: none;
+  }
+
+  .menu-list {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-list li {
+    border-top: 0;
+    padding: 1.5rem;
+  }
+
+  .menu-list li a {
+    font-size: 1.6rem;
+  }
+
+  .feature {
+    position: absolute !important;
+    z-index: 1;
+    background-color: #fff;
+    width: 20rem;
+    text-align: left;
+    visibility: hidden;
+    top: 8rem;
+    transform: translateY(50px);
+    transition: transform 0.5s ease;
+  }
+
+  .change-feature {
+    visibility: visible;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+  }
+
+  .feature .top-border {
+    border-top: 0.04rem solid #eee !important;
+  }
+
+  .menu-list li {
+    border-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .menu-list li a {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .menu-list li {
+    border-top: 0;
+    padding: 1.5rem 0.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .contact .reservation-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .block {
+    margin-top: 4rem;
+  }
+
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 45%;
+  }
+
+  .block-icon .fa-stack {
+    font-size: 3.5rem;
+  }
+
+  .footer-social-icons {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .footer-para p {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .footer-para h6 {
+    text-align: center;
+  }
+
+  .carousel-height .carousel-inner .item img {
+    width: 100%;
+    height: auto;
+  }
+  .about-right {
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .chef-info {
+    margin-bottom: 4rem;
+  }
+
+  .chefs {
+    padding: 5rem 7rem;
+  }
+
+  .meal-offer .price-block {
+    width: 100px !important;
+    height: 5rem;
+    margin: 0 35%;
+  }
+
+  #dinner {
+    margin-bottom: 3rem;
+  }
+
+  .feature {
+    position: unset;
+    background-color: #fff;
+    margin-top: 2rem;
+    display: none;
+  }
+  
+  .change-feature-small-screen {
+    display: block;
+  }
+  .about-right {
+    width: 100%;
+    height: 80vh;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .owl-carousel .card {
+    width: 93%;
+    height: 350px;
+  }
+
+  .remove-brk {
+    display: none;
+  }
+
+  .chefs {
+    padding: 5rem 2rem;
+  }
+
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 40%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .about-left p {
+    font-size: 1.3rem;
+  }
+
+  .about-right {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .left-banner h1 {
+    font-size: 5rem;
+  }
+
+  .chefs {
+    padding: 5rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .left-banner h1 {
+    font-size: 4.6rem;
+  }
+
+  .block-icon {
+    position: absolute;
+    top: -3rem;
+    left: 35%;
+  }
+}
+
+/*-----------------------------media query ends here-------------------------------*/
